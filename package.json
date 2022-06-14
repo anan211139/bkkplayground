@@ -1,0 +1,25 @@
+{
+  "name": "demo-app",
+  "version": "0.1.0",
+  "description": "A project template for Koop",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha 'test/**/*.test.js'",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "config": "^3.3.7",
+    "koop": "^4.2.3"
+  },
+  "devDependencies": {
+    "@koopjs/cli": "^1.1.2",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  },
+  "repository": "",
+  "private": true,
+  "keywords": [
+    "koop",
+    "app"
+  ]
+}
