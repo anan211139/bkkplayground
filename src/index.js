@@ -1,7 +1,9 @@
-const config = require('config')
+// const config = require('config')
 const Koop = require('koop')
 const routes = require('./routes')
 const plugins = require('./plugins')
+
+const port = process.env.PORT
 
 // initiate a koop app
 const koop = new Koop()
@@ -19,4 +21,5 @@ routes.forEach((route) => {
 })
 
 // start the server
-koop.server.listen(config.port, () => koop.log.info(`Koop server listening at ${config.port}`))
+// koop.server.listen(config.port, () => koop.log.info(`Koop server listening at ${config.port}`))
+koop.server.listen(port, () => koop.log.info(`Koop server listening at ${port}`))
